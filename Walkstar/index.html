@@ -1,0 +1,408 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WALKSTAR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/fontawesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script type="text/javascript">
+    var file;
+  </script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body style="overflow-x:hidden;">
+  <!-- This is the homepage for the shopping website. -->
+  <div class="card">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark py-4">
+      <a class="navbar-brand brand-name" href="">WALKSTAR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active align-icons">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item align-icons">
+            <a class="nav-link " href="all_products.html">Shop</a>
+          </li>
+
+          <li class="nav-item  align-icons">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item align-icons">
+            <a class="nav-link" href="#foot2">About Us</a>
+          </li>
+          <li class="nav-item d-flex justify-content-end">
+            <a class="navbar-brand" href="my_cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class="countItem ">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <br>
+  <br> <br><br>
+  <div id="banner">
+    <img src="assets\imani-bahati-LxVxPA1LOVM-unsplash.jpg" alt="shoe-banner" class="bg-image">
+    <div class="centered">
+      <div class="card text-center" style="background: transparent; border: none;">
+        <div class="card-body" style="border: none;">
+          <h5 class="card-title display-4" style="font-weight: bold; font-size: 3.5vw;">Upto 80% off, this summer!</h5>
+          <br>
+          <p class="card-text banner-text" style="font-size:3vw ;">Grab your favourite pair right now</p>
+          <br>
+          <a href="all_products.html" class="btn btn-dark" style="font-size: 1.5vw;" id="banner-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- Categories -->
+  <br><br>
+  <p class="display-2 text-center">Categories</p>
+  <br>
+  <div class="fade_rule"></div>
+  <br>
+  <div class="fade_rule"></div>
+  <br><br>
+  <div class="row banner" style="padding-left: 8px;">
+    <div class="container column banner-img">
+      <img src="assets\Categories\male.jpg" alt="Men">
+      <a href="all_products.html" onclick="saveFilter('Men')"> <button class="btn"
+          style="font-weight: bolder;">Men</button></a>
+    </div>
+    <div class="container column banner-img">
+      <img src="assets\Categories\female.jpg" alt="Women">
+      <a href="all_products.html" onclick="saveFilter('Women')"> <button class="btn"
+          style="font-weight: bolder;">Women</button></a>
+    </div>
+    <div class="container column banner-img">
+      <img src="assets\Categories\unisex.jpg" alt="Unisex">
+      <a href="all_products.html" onclick="saveFilter('Unisex')"> <button class="btn"
+          style="font-weight: bolder;">Unisex</button></a>
+    </div>
+  </div>
+  <br><br><br><br>
+  <p class="display-2 text-center">New Arrivals</p>
+  <br><br>
+  <div class="fade_rule"></div>
+  <br>
+  <div class="row align-items-center" style="padding-left: 35.5%; padding-right: 35%; display: flexbox;">
+    <div class="col text-center">
+      <div class="new_arrivals_sorting">
+        <ul class="arrivals_grid_sorting clearfix button-group filters-button-group af">
+          <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
+            role="button" onclick="filter_category('Men')">Men</li>
+          <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
+            role="button" onclick="filter_category('Women')">Women</li>
+          <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
+            role="button" onclick="filter_category('Unisex')">Unisex</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="objects">
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" style="overflow: hidden;" id="exampleModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="border-radius: 10px; background-color: antiquewhite;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <img src="assets/Products/Shoes1.jpg" style="height: 30x; width: 40px;" alt="" srcset=""> -->
+        </div>
+        <div class="modal-footer text-center">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-dark" style="width:stretch">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <p class="display-2 text-center">Latest Blogs</p>
+  <br><br>
+  <div class="fade_rule"></div>
+  <br>
+  <div class="fade_rule"></div>
+  <br><br><br>
+
+  <div class="post-container owl-carousel">
+    <div class="post">
+      <div class="image">
+        <img src="assets/Blogs/Blogs1.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="date"><i class="fas fa-calender-alt"></i></div>
+        <a href="blogs.html" class="title text-center">Design your Wardrobe</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos</p>
+        <a href="blogs.html" class="link">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="image">
+        <img src="assets/Blogs/Blogs2.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="date"><i class="fas fa-calender-alt"></i></div>
+        <a href="blogs.html" class="title text-center">Firey legs of Ronaldo</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos</p>
+        <a href="blogs.html" class="link">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="image">
+        <img src="assets/Blogs/Blogs3.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="date"><i class="fas fa-calender-alt"></i></div>
+        <a href="blogs.html" class="title text-center">Sports and Lonliness</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos</p>
+        <a href="blogs.html" class="link">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="image">
+        <img src="assets/Blogs/Blogs4.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="date"><i class="fas fa-calender-alt"></i></div>
+        <a href="blogs.html" class="title text-center">Jaw Dropping</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos</p>
+        <a href="blogs.html" class="link">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="image">
+        <img src="assets/Blogs/Blogs5.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="date"><i class="fas fa-calender-alt"></i></div>
+        <a href="blogs.html" class="title text-center">Hills better than sea</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos</p>
+        <a href="blogs.html" class="link">Read More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br><br> <br> <br>
+  <div class="container">
+    <div class="container-card shadow">
+      <div class="row justify-content-between">
+        <div class="col-md-3 text-center border rounded-left">
+          <i class="fa-solid fa-truck"></i>
+          Free Shipping
+          <p>Zero Delivery Charges. Delivered with utmost care.</p>
+        </div>
+
+        <div class="col-md-3 text-center border">
+          <i class="fa fa-money" aria-hidden="true"></i>
+          Cash On Delivery
+          <p>Pay with assurance. We deliver with an open-box policy.</p>
+        </div>
+
+        <div class="col-md-3 text-center border">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+          45 Days Return Policy
+          <p>Don't force it if it's not working out.</p>
+        </div>
+
+        <div class="col-md-3 text-center border rounded-right">
+          <i class="fa-solid fa-clock"></i>
+          Open All Week
+          <p>Order Anytime throughout the week.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <h1 class="text-center head">WALKSTAR</h1>
+  <br><br><br><br>
+  <footer class="text-center text-lg-start bg-dark text-light active">
+    <section class="d-flex justify-content-center justify-content-center p-4 border-bottom" id="foot">
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset align-icons">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset align-icons">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset align-icons">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset align-icons">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset align-icons">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4" style="font-family: auto!important;">
+              <b>WALKSTAR</b>
+            </h6>
+            <br>
+            <p>
+              Your very own S<b>HOPPING</b> center.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <p>
+              <a href="#!" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Men</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Women</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Kids</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <p>
+              <a href="#!" class="text-reset">Blogs</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Shopping</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Support</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <i class="fas fa-envelope me-3"></i>
+            support@walkstar.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 91 1234567890</p>
+            <p><i class="fas fa-print me-3"></i> + 91 9876543210</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script src="cart.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.post-container').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            item: 1,
+            loop: true
+          },
+          200: {
+            item: 2,
+            loop: true
+          },
+          700: {
+            item: 3,
+            loop: true
+          },
+          1000: {
+            item: 0,
+            loop: true
+          }
+        }
+      })
+    })
+  </script>
+  <script>
+    function saveFilter(category) {
+      localStorage.setItem('category', category);
+    }
+  </script>
+</body>
+
+</html>
